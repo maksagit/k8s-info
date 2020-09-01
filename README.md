@@ -1,9 +1,9 @@
 # 1. Get started.
-  Before you start work with Kubernetes you need to install:
+`Before you start work with Kubernetes you need to install:
 
-  Azure cli - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
-  Kubectl:
-  az aks install-cli
+Azure cli - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+Kubectl:
+  >az aks install-cli`
 
 # 2. How to login to aks cluster.
   Login to the azure infrastructure:
