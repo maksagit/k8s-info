@@ -21,3 +21,6 @@ Kubectl:
 ### 4. How to get pods and exec to it
   `kubectl get pods`  
   `kubectl exec -it PoD-NaMe -- /bin/bash`  
+  
+### 5. How copy files from pod
+  `kubectl cp default/PoD-NaMe:"FolderBackupInPod" tmp`
