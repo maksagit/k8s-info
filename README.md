@@ -9,7 +9,7 @@ Kubectl:
   `az login
   az account set --subscription "Microsoft Azure Enterprise MSDN Dev/Test"`  
   Download AKS credentials:  
-  `az aks get-credentials --resource-group crgd3 --name crgd3-k8s-01`
+  `az aks get-credentials --resource-group crgd3 --name crgd3-k8s-01`  
   Check access:  
   `kubectl get nodes`
 
