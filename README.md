@@ -24,3 +24,15 @@ Kubectl:
   
 ### 5. How copy files from pod
   `kubectl cp default/PoD-NaMe:"FolderBackupInPod" tmp`
+------------------------------------------------------------------------------------
+$var=Invoke-WebRequest -Method GET -Uri ''
+$var.content
+
+$vnetId = az network vnet subnet list --resource-group teamResources-1 --vnet-name vnet --query "[0].id" --output tsv
+az aks create --resource-group teamResources-1 --name myAKSClusterTeam2 --network-plugin azure --vnet-subnet-id $vnetId --docker-bridge-address 172.17.0.1/16 --dns-service-op 192.168.0.10 ...
+
+az ad group list --filter "displayname eq 'team2'" -o table
+az aks update -g $rg -n $aks -enable-aad --add-admin-group-object-ids GROUPID --aad-tenant-id TENANTID
+
+
+kubectl get pods -A -o wide
